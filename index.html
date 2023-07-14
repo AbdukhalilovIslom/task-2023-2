@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ax Technalogy Task</title>
+    <link rel="stylesheet" type="text/css" href="./css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"
+    />
+  </head>
+  <body>
+    <div class="main container">
+      <header class="header">
+        <a href="./index.html" class="logo">
+          <img src="./assets/svg/Group.svg" alt="logo" class="logo__img" />
+        </a>
+        <div class="contacts">
+          <div class="social__medias">
+            <a href="https://web.telegram.org/" class="social__media__btn"
+              ><img
+                src="./assets/svg/iconoir_telegram-circle.svg"
+                alt="social__media"
+                class="social__media"
+              />
+            </a>
+            <a
+              href="https://www.whatsapp.com/?lang=ru"
+              class="social__media__btn"
+            >
+              <img
+                src="./assets/svg/Vector.svg"
+                alt="social__media"
+                class="social__media"
+              />
+            </a>
+          </div>
+          <div class="phone__number">+99899 XXX XX XX</div>
+        </div>
+      </header>
+      <div class="locations" id="locations">
+        <div id="close" class="popup">
+          <div class="popup-content">
+            <img
+              src="./assets/svg/close_FILL0_wght400_GRAD0_opsz48 (1) 2.svg"
+              alt=""
+              class="close"
+              id="close"
+            />
+            <div id="viewer" onclick="event.stopPropagation()"></div>
+          </div>
+        </div>
+
+        <div id="download__button" class="download__button">
+          <span>Download brochure</span
+          ><img src="./assets/svg/download.svg" alt="download" />
+        </div>
+      </div>
+    </div>
+    <div class="download__popup" id="download__popup">
+      <div class="download">
+        <img
+          src="./assets/svg/close_FILL0_wght400_GRAD0_opsz48 (1) 2.svg"
+          alt="download__close"
+          class="download__close"
+          id="download__close"
+        />
+        <div class="download__desc">
+          <h2 class="download__desc__h2">don't miss the unique offer</h2>
+          <p class="download__desc__p">
+            Be the first to experience the beauty of Keturah Resort at our
+            exclusive private screening event! Leave your download information
+            below to receive an invitation to our special event.
+          </p>
+          <div class="download__btns">
+            <a href="https://web.telegram.org/" class="download__btn">
+              <img
+                src="./assets/svg/iconoir_telegram-circle.svg"
+                alt="btn"
+                class="download__btn__img"
+              /><span>Telegram</span>
+            </a>
+            <a href="https://www.whatsapp.com/?lang=ru" class="download__btn">
+              <img
+                src="./assets/svg/Vector.svg"
+                alt="btn"
+                class="download__btn__img"
+              /><span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <div class="download__form">
+          <input
+            placeholder="Your name"
+            class="download__form__input"
+            type="text"
+          />
+          <input
+            placeholder="Your e-mail"
+            class="download__form__input"
+            type="text"
+          />
+          <input
+            placeholder="Phone number"
+            class="download__form__input"
+            type="text"
+          />
+          <button class="download__form__btn">Join now</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
