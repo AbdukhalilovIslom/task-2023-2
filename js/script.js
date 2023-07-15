@@ -25,13 +25,14 @@ const locations = [
     image: "../assets/images/4.png",
     letter: "R1",
     name: "Road",
-    location: { x: 80, y: 70 },
+    location: { x: 70, y: 70 },
   },
 ];
 
 const locationsDiv = document.getElementById("locations");
 const popup = document.querySelector(".popup");
 let viewer;
+const baseUrl = "https://photo-sphere-viewer-data.netlify.app/assets/";
 
 locations.map((item) => {
   const location = document.createElement("div");
@@ -40,6 +41,7 @@ locations.map((item) => {
 
   location.classList.add("location");
   letter.classList.add("location__letter");
+  name.classList.add("location__name");
 
   letter.textContent = item.letter;
   name.textContent = item.name;
@@ -61,7 +63,9 @@ function popupOpen(image) {
   viewer = new PhotoSphereViewer.Viewer({
     container: "viewer",
     panorama: image,
+    loadingImg: baseUrl + "loader.gif",
   });
+
   popup.style.display = "flex";
 }
 
@@ -84,3 +88,8 @@ document
   .addEventListener("click", function () {
     document.querySelector("#download__popup").style.display = "none";
   });
+
+//  burger menu
+document.querySelector(".burger__menu").addEventListener("click", function () {
+  this.classList.toggle("open");
+});

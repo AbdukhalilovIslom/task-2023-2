@@ -30,6 +30,12 @@
 
 }
 
+.popup__text {
+    position: absolute;
+    top: -31px;
+    right: 32px;
+}
+
 .close:hover {
     opacity: 0.5;
 }
@@ -181,5 +187,29 @@
 
     .download__form {
         width: 100%;
+    }
+
+    .close {
+        width: 20px;
+        top: -25px;
+        right: -5px;
+    }
+
+    .download__close {
+        width: 20px;
+    }
+
+    .popup-content {
+        height: 60%;
+    }
+
+    .popup__text {
+        top: -25px;
+        right: 20px;
+        font-size: 14px;
+    }
+
+    .download__button {
+        font-size: 14px;
     }
 }

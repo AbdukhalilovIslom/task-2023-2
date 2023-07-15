@@ -84,7 +84,8 @@ html, body {
 
 .burger {
     display: none;
-    width: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .locations {
@@ -101,8 +102,6 @@ html, body {
     border-right: 1px solid #a0a0a0;
 }
 
-.social__media__btn {}
-
 .social__media {
     width: 25px;
 }
@@ -110,17 +109,13 @@ html, body {
 .phone__number {
     height: 100%;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.content {}
-
-.locations {}
 
 .location {
     position: absolute;
@@ -138,7 +133,7 @@ html, body {
     color: #000000;
 }
 
-.download__btn {}
+
 
 #viewer {
     width: 100%;
@@ -150,8 +145,9 @@ html, body {
         display: none;
     }
 
-    .burger {
-        display: block;
+
+    .location__name {
+        font-size: 14px;
     }
 
 }
