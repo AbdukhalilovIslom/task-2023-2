@@ -51,14 +51,68 @@
     position: absolute;
     bottom: 10%;
     left: 10%;
-    padding: 4px 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     gap: 10px;
     width: max-content;
     background: linear-gradient(168deg, #212121 50%, #000000 50%);
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.download__button:hover {
+    scale: 1.05;
+}
+
+.download__button:active {
+    scale: 1;
+}
+
+
+
+.download__button:hover .download__button__img {
+    animation: bounce 1s infinite;
+}
+
+.download__button:hover {
+    animation: background__animation 1s inherit;
+}
+
+.download__button__span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download__button__line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-3px)
+    }
+
+    50% {
+        transform: translateY(0)
+    }
+
+    75% {
+        transform: translateY(-3px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 
 .download__popup {
     display: none;
@@ -88,6 +142,10 @@
     top: -20px;
     right: 0;
     cursor: pointer;
+}
+
+.download__close:hover {
+    opacity: 0.7;
 }
 
 .download__desc {
@@ -178,6 +236,12 @@
     line-height: 27px;
     background-color: #fff;
     border: none;
+    transition: 0.3s;
+}
+
+.download__form__btn:hover {
+    background-color: #212121;
+    color: #fff;
 }
 
 @media screen and (max-width: 767px) {

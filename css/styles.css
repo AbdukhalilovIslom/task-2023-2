@@ -126,7 +126,29 @@ html, body {
     width: max-content;
     background: linear-gradient(155deg, #212121 50%, #000000 50%);
     cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.location:hover {
+    background: #fff;
+    color: #000000;
+}
+
+
+@keyframes background__animation {
+    0% {
+        background: linear-gradient(168deg, #212121 50%, #000000 50%);
+    }
+
+    50% {
+        background: linear-gradient(84deg, #212121 50%, #000000 50%);
+    }
+
+    100% {
+        background: linear-gradient(0deg, #212121 50%, #000000 50%);
+    }
+}
+
 
 .location__letter {
     background-color: #fff;
